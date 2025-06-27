@@ -115,8 +115,8 @@ graph TD
 
 ```mermaid
 graph TD
-    A[Login Component] --> B[login() Action]
-    B --> C[API: /api/auth/login/]
+    A[Login Component] --> B[login Action]
+    B --> C[API auth/login]
     C --> D[JWT Token Response]
     D --> E[Store Token in Redux]
     E --> F[Store Token in localStorage]
@@ -127,8 +127,8 @@ graph TD
 
 ```mermaid
 graph TD
-    A[CreatePost Component] --> B[createPost() Action]
-    B --> C[API: /api/posts/]
+    A[CreatePost Component] --> B[createPost Action]
+    B --> C[API posts endpoint]
     C --> D[New Post Response]
     D --> E[Update Posts in Redux]
     E --> F[Show Success Toast]
